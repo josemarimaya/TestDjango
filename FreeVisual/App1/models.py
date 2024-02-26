@@ -22,3 +22,8 @@ class EquipoModel(models.Model):
     marca = models.CharField(max_length=100, verbose_name="Marca", null = False, blank= False)
     modelo = models.CharField(max_length=100, verbose_name="Modelo", null = True, blank = True)
     duenyo_fk = models.ForeignKey(ProfesionalModel, on_delete = models.CASCADE)
+
+    class Meta: # Para indicar como se va a presentar en la base de datos la información
+        db_table = "Equipo"
+        verbose_name = "Equipo"
+        verbose_name_plural = "Equipos"
