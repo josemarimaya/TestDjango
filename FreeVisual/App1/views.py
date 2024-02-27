@@ -10,7 +10,7 @@ def IndexView(request):
     return render(request, "index.html", {"objeto": objeto})
 
 
-def AutorView(request, id):
+def ProView(request, id):
 
-    autor = get_object_or_404(ProfesionalModel, id=id)
-    return render(request, "profesional.html", {"objeto": autor})
+    pro = get_object_or_404(ProfesionalModel, id=id)
+    return render(request, "profesional.html", {"objeto": pro})

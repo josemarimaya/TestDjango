@@ -1,7 +1,7 @@
 from django import path
-from .views import IndexView
+from .views import IndexView, ProView
 
 urlpatterns = [
     path('', IndexView),
-   # path('autor/<int:id>')
+    path('pro/<int:id>', ProView)
 ]

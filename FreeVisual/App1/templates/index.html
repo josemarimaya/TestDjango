@@ -12,7 +12,11 @@
 
     <hr>
 
-    <li>
+    {% for i in objeto %}
+    <li>  a {{i.nombre}} </li>
+    {% endfor %}
+    
+    
 
     <script src="{% static "script.js" %}"> </script>
 </body>
