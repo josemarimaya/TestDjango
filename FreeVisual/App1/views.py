@@ -12,5 +12,5 @@ def IndexView(request):
 
 def ProView(request, id):
 
-    pro = get_object_or_404(ProfesionalModel, id=id)
-    return render(request, "profesional.html", {"objeto": pro})
+    objeto = get_object_or_404(ProfesionalModel, id=id)
+    return render(request, "profesional.html", {"objeto": objeto})
