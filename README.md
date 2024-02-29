@@ -3,8 +3,8 @@
 Vamos a tener en cuenta los comandos que usaremos en el Windows Shell para abrir el entorno virtual:
 
 1º Nos vamos a la carpeta del proyecto django
-2º py -m venv venv
-3º .\venv\Scripts\activate
+2º py -m venv venv (esto es para crear el entorno virtual, (SOLAMENTE UNA VEZ))
+3º .\venv\Scripts\activate (y esto para activarlo) 
 
 Para trabajar con el servidor:
 
