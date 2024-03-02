@@ -9,6 +9,10 @@ def IndexView(request):
     objeto = ProfesionalModel.objects.all().order_by("-id")
     return render(request, "index.html", {"objeto": objeto})
 
+def IndexVue(request):
+
+    return render(request, 'frontend/index.html')
+
 
 def ProView(request, id):
 
