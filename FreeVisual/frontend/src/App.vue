@@ -1,15 +1,15 @@
 <template>
-  <h1> Heyyyyyyyy</h1>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <ExampleFor/>
+  
 </template>
 
-<script>
+<script setup>
 
-export default {
-  name: 'App',
-  components: {
-  }
-}
+//import PostContainer from './components/PostContainer.vue';
+//import CounterOption from './components/CounterOption.vue';
+
+//import ExampleSelective from './components/ExampleSelective.vue'
+import ExampleFor from './components/ExampleFor.vue'
 </script>
 
 <style>
@@ -17,7 +17,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
