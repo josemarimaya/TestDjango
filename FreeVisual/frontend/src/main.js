@@ -7,7 +7,7 @@ Vue.use(BootstrapVue)*/
 import { createApp } from 'vue';
 import App from './App.vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import HelloWorld from './components/HelloWorld.vue';
+import HelloWorld from './components/Ejemplos/HelloWorld.vue';
 // Definimos los componentes
 
 const Home = {template: '<h1> Hola mundo </h1>'}
