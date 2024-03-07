@@ -2,14 +2,14 @@
     <nav id="m-nav">
       <div class="nav-container">
         <router-link to="/">FreeVisual</router-link>
-        <a href="">Fotografías</a>
-        <a href="">Vídeo</a>
-        <a href="">Artistas</a>
+        <router-link to="/">Fotografías</router-link>
+        <router-link to="/">Vídeo</router-link>
+        <router-link to="/">Artistas</router-link>
         <router-link to="/about">About</router-link>
         <div class="search-bar">
-          <input type="text" id="nav-s" placeholder="Busca tu contenido favorito">
+          <v-text-field v-model="search" label="Busca tu contenido favorito" append-icon="mdi-magnify" class="custom-search-field"></v-text-field>
         </div>
-        <button class="login-button">Iniciar sesión</button>
+        <v-btn to="/login" class="login-button">Iniciar sesión</v-btn>
       </div>
     </nav>
   </template>
@@ -57,7 +57,13 @@ nav a:hover {
   flex-grow: 4;
   margin-left: 10px;
 }
-
+.custom-search-field{
+  font-size: 18px; /* Ajusta el tamaño del icono según tus necesidades */
+  width: 400px; /* Ajusta el ancho según tus necesidades */
+  padding: 5px;
+  height: 50px; /* Ajusta el padding según tus necesidades */
+  margin-bottom: 15px;
+}
 .login-button {
   padding: 10px;
   background-color: #4CAF50;
@@ -79,9 +85,12 @@ nav a:hover {
   }
 
   .search-bar {
-    flex-grow: 2; /* Reducir el tamaño de la barra de búsqueda en pantallas más pequeñas */
-    margin-top: 10px;
+    flex-grow: 1; /* Ajusta el tamaño de la barra de búsqueda en pantallas más pequeñas */
     margin-left: 0;
+  }
+
+  .custom-search-field .v-icon {
+    font-size: 18px; /* Ajusta el tamaño del icono según tus necesidades */
   }
 
   .login-button {
