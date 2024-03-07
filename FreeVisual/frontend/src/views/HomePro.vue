@@ -1,9 +1,6 @@
 <template>
     <NavBar/>
     <MediaContainer/>
-
-    
-
 </template>
 
 <script setup>
