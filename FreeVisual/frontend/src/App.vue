@@ -1,14 +1,13 @@
 <template>
 
-  <ProForm/>
+  <HomePro />
   
 </template>
 
 <script setup>
 
-import ProForm from './components/Pro/ProForm.vue';
-
+import HomePro from './views/HomePro.vue';
 </script>
 
 <style>
-</style>./components/Ejemplos/ModelForm.vue
+</style>

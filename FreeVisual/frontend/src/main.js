@@ -1,30 +1,25 @@
-/*
-import Vue from 'vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-import { BootstrapVue } from 'bootstrap-vue'
-Vue.use(BootstrapVue)*/
 import { createApp } from 'vue';
 import App from './App.vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import HelloWorld from './components/Ejemplos/HelloWorld.vue';
-// Definimos los componentes
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+import { BootstrapVue } from 'bootstrap-vue/dist/bootstrap-vue.esm';
 
-const Home = {template: '<h1> Hola mundo </h1>'}
+// Definir los componentes
+const Home = { template: '<h1> Hola mundo </h1>' };
+const HelloWorld = { /* ... definición de HelloWorld ... */ };
 
+// Configuración de rutas
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    // Configuración de rutas
-    {
-        path:'/', component: Home,
-    },
-    {
-        path: '/about', component: HelloWorld
-    }
+    { path: '/', component: Home },
+    { path: '/about', component: HelloWorld }
   ],
 });
 
+// Crear la aplicación y usar el router y BootstrapVue
 const app = createApp(App);
 app.use(router);
+app.use(BootstrapVue);
 app.mount('#app');
