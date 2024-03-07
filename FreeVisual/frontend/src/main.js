@@ -1,9 +1,12 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import { createRouter, createWebHistory } from 'vue-router';
+/*
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import { BootstrapVue } from 'bootstrap-vue/dist/bootstrap-vue.esm';
+*/
+
 
 // Definir los componentes
 const Home = { template: '<h1> Hola mundo </h1>' };
@@ -21,5 +24,5 @@ const router = createRouter({
 // Crear la aplicación y usar el router y BootstrapVue
 const app = createApp(App);
 app.use(router);
-app.use(BootstrapVue);
+//app.use(BootstrapVue);
 app.mount('#app');
