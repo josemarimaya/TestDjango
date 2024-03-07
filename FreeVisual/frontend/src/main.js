@@ -14,15 +14,18 @@ import * as directives from 'vuetify/directives'
 
 
 // Definir los componentes
-const Home = { template: '<h1> Hola mundo </h1>' };
-const HelloWorld = { /* ... definición de HelloWorld ... */ };
+
+import HomePro from './views/HomePro.vue';
+import AboutPro from '@/views/AboutPro.vue';
+import LoginPro from '@/views/LoginPro.vue';
 
 // Configuración de rutas
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: Home },
-    { path: '/about', component: HelloWorld }
+    { path: '/', component: HomePro },
+    { path: '/about', component: AboutPro },
+    { path: '/login', component: LoginPro }
   ],
 });
 
