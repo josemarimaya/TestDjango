@@ -1,11 +1,36 @@
 <template>
     <div class="post">
-        <h3> Titulo</h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat delectus, sunt, quidem eius laboriosam aperiam voluptas architecto ex similique nobis doloribus tempora illum, doloremque fugit autem accusamus deserunt? Expedita.</p>
+        <h3> {{ props.title}}</h3>
+        <p> {{ props.content }}</p>
+        <button @click="handleClick()"> Di hola</button>
     </div>
 </template>
 
-<script setup>
+<script>
+
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+    name : 'PostDetail',
+    props: {
+        title:{
+            type: String,
+            required: true
+        },
+        content:{   
+            type: String,
+            required: false,
+            default: "Este post no tiene contenido"
+        }
+    },
+    emits: ["sayHi"],
+    setup(props) {
+        const handleClick = () => {
+            alert("Hola desde el hijo")
+        }
+        return{props, handleClick}
+    }
+})
 
 </script>
 
