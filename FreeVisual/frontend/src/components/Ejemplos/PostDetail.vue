@@ -2,36 +2,24 @@
     <div class="post">
         <h3> {{ props.title}}</h3>
         <p> {{ props.content }}</p>
+        <input type="text" v-model="message">
         <button @click="handleClick()"> Di hola</button>
     </div>
 </template>
 
-<script>
+<script setup>
 
-import { defineComponent } from 'vue';
+import { defineProps, defineEmits, ref } from 'vue';
 
-export default defineComponent({
-    name : 'PostDetail',
-    props: {
-        title:{
-            type: String,
-            required: true
-        },
-        content:{   
-            type: String,
-            required: false,
-            default: "Este post no tiene contenido"
-        }
-    },
-    emits: ["sayHi"],
-    setup(props) {
-        const handleClick = () => {
-            alert("Hola desde el hijo")
-        }
-        return{props, handleClick}
-    }
-})
+const handleClick = () => {
+    emit("Hola desde el hijo")
+}
 
+const props = defineProps({title: String, content:String})
+
+const emit = defineEmits(['sayHi'])
+
+let message = ref("")
 </script>
 
 <style scoped>
