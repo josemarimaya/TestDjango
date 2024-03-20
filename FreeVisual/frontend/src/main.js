@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import { BootstrapVue } from 'bootstrap-vue/dist/bootstrap-vue.esm';
 */
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap"
 
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
