@@ -1,4 +1,5 @@
 <template>
+  <router-view>
     <nav id="m-nav">
       <div class="nav-container">
         <router-link to="/">FreeVisual</router-link>
@@ -7,11 +8,13 @@
         <router-link to="/">Artistas</router-link>
         <router-link to="/about">About</router-link>
         <div class="search-bar">
-          <v-text-field v-model="search" label="Busca tu contenido favorito" append-icon="mdi-magnify" class="custom-search-field"></v-text-field>
+          <v-text-field  label="Busca tu contenido favorito" append-icon="mdi-magnify" class="custom-search-field"></v-text-field>
         </div>
         <v-btn to="/login" class="login-button">Iniciar sesión</v-btn>
       </div>
     </nav>
+  </router-view>
+    
   </template>
 
 <script setup>
