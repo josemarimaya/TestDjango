@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import { createRouter, createWebHistory } from 'vue-router';
+import router from './router'
 /*
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
@@ -14,25 +14,6 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import '@mdi/font/css/materialdesignicons.css'; // Importa los estilos de los iconos
-
-
-// Definir los componentes
-
-import HomePro from '@/views/HomePro.vue';
-import AboutPro from '@/views/AboutPro.vue';
-import LoginPro from '@/views/LoginPro.vue';
-
-// Configuración de rutas
-const router = createRouter({
-  history: createWebHistory(),
-  routes: [
-    { path: '/', name: 'home', component: HomePro },
-    { path: '/about', name:'about', component: AboutPro },
-    { path: '/login', component: LoginPro }
-  ],
-});
-
-
 
 
 // Crear la aplicación y usar el router y BootstrapVue

@@ -1,6 +1,7 @@
 <template>
     <NavBar/>
     <MediaContainer/>
+    <router-view/>
 </template>
 
 <script setup>

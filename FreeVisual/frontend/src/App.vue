@@ -1,13 +1,16 @@
 <template>
-  
-  <router-view>
-    <NavBar/>
-  </router-view>
+  <nav>
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
+  </nav>
+  <RouterView/>
+  <HomePro/>
 </template>
 
 <script setup>
 
-import NavBar from '@/components/MainComponents/NavBar.vue';
+import HomePro from '@/views/HomePro.vue';
+
 </script>
 
 <style>

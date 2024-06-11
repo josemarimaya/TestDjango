@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        Te comiste tremendisimo login
     </div>
 </template>
 
